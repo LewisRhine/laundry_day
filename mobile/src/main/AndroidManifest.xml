@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.laundryday.app.lewisrhine.laundryday" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-sdk tools:node="replace" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".Alarm"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <service
+            android:name=".alarmservices.AlarmService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".alarmservices.WasherAlarmService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".alarmservices.DryerAlarmService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".AlarmDoneActivity"
+            android:label="@string/title_activity_alarm_done" >
+        </activity>
+    </application>
+
+</manifest>

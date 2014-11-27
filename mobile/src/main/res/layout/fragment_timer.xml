@@ -1,0 +1,275 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="0dp"
+    tools:context="com.laundryday.app.lewisrhine.laundryday.TimerFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardBalanceCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:contentPadding="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cardBalanceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_balance_string"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cardBalanceNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/$"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/cardBalanceNumber"
+                        android:layout_toStartOf="@id/cardBalanceNumber"
+                        android:text="@string/money_symbol"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical">
+
+
+        <ImageView
+            android:id="@+id/washerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ld_washer_dryer" />
+
+        <TextView
+            android:id="@+id/washerTimerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/washerImage"
+            android:layout_alignEnd="@id/washerImage"
+            android:layout_alignLeft="@id/washerImage"
+            android:layout_alignRight="@id/washerImage"
+            android:layout_alignStart="@id/washerImage"
+            android:layout_alignTop="@id/washerImage"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:id="@+id/washerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/washerImage"
+            android:layout_alignEnd="@id/washerImage"
+            android:layout_alignLeft="@id/washerImage"
+            android:layout_alignRight="@id/washerImage"
+            android:layout_alignStart="@id/washerImage"
+            android:layout_alignTop="@id/washerImage" />
+
+        <TextView
+            android:id="@+id/washerCostText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/washerImage"
+            android:layout_alignRight="@id/washerImage"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="40dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_green_light" />
+
+        <TextView
+            android:id="@+id/washerAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical">
+
+        <TextView
+            android:id="@+id/dryerAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/dryerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ld_washer_dryer" />
+
+        <TextView
+            android:id="@+id/dryerTimerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dryerImage"
+            android:layout_alignEnd="@id/dryerImage"
+            android:layout_alignLeft="@id/dryerImage"
+            android:layout_alignRight="@id/dryerImage"
+            android:layout_alignStart="@id/dryerImage"
+            android:layout_alignTop="@id/dryerImage"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:id="@+id/dryerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dryerImage"
+            android:layout_alignEnd="@id/dryerImage"
+            android:layout_alignLeft="@id/dryerImage"
+            android:layout_alignRight="@id/dryerImage"
+            android:layout_alignStart="@id/dryerImage"
+            android:layout_alignTop="@id/dryerImage" />
+
+        <TextView
+            android:id="@+id/dryerCostText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/dryerImage"
+            android:layout_alignRight="@id/dryerImage"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="40dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_green_light" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cycleCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        app:cardElevation="5dp"
+        app:contentPadding="15dp">
+
+
+        <LinearLayout
+            android:id="@+id/cycleLayoutParent"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/cycleLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/loadsAmountNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/loadsAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/loadsAmountNumber"
+                    android:layout_toRightOf="@id/loadsAmountNumber"
+                    android:text="@string/loads_left_string"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+                <TextView
+                    android:id="@+id/doneByText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/loadsAmountText"
+                    android:layout_toRightOf="@id/loadsAmountText"
+                    android:text="@string/done_by_string"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/doneByNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/doneByText"
+                    android:layout_toRightOf="@id/doneByText"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <com.shamanland.fab.FloatingActionButton
+        android:id="@+id/setLoadsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/fab_icon"
+        app:floatingActionButtonColor="#ff9fa3ff" />
+
+</FrameLayout>

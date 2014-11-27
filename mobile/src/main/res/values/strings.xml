@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">laundry day</string>
+    <string name="title_section1">Timers</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="pref_washer_cost">
+        <item>$.25</item>
+        <item>$.50</item>
+        <item>$.75</item>
+        <item>$1.00</item>
+        <item>$1.25</item>
+        <item>$1.50</item>
+        <item>$1.75</item>
+        <item>$2.00</item>
+        <item>$2.25</item>
+        <item>$2.50</item>
+        <item>$2.75</item>
+        <item>$3.00</item>
+    </string-array>
+    <string-array name="pref_washer_cost_values">
+        <item>.25</item>
+        <item>.50</item>
+        <item>.75</item>
+        <item>1.00</item>
+        <item>1.25</item>
+        <item>1.50</item>
+        <item>1.75</item>
+        <item>2.00</item>
+        <item>2.25</item>
+        <item>2.50</item>
+        <item>2.75</item>
+        <item>3.00</item>
+    </string-array>
+    <string-array name="pref_dryer_cost">
+        <item>$.25</item>
+        <item>$.50</item>
+        <item>$.75</item>
+        <item>$1.00</item>
+        <item>$1.25</item>
+        <item>$1.50</item>
+        <item>$1.75</item>
+        <item>$2.00</item>
+        <item>$2.25</item>
+        <item>$2.50</item>
+        <item>$2.75</item>
+        <item>$3.00</item>
+    </string-array>
+    <string-array name="pref_dryer_cost_values">
+        <item>.25</item>
+        <item>.50</item>
+        <item>.75</item>
+        <item>1.00</item>
+        <item>1.25</item>
+        <item>1.50</item>
+        <item>1.75</item>
+        <item>2.00</item>
+        <item>2.25</item>
+        <item>2.50</item>
+        <item>2.75</item>
+        <item>3.00</item>
+    </string-array>
+    <string-array name="pref_dryer_amount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+    <string name="title_activity_alarm_done">AlarmDoneActivity</string>
+    <string name="go_get_it">go get it… don\'t be rude.</string>
+    <string name="done_button_string">OK I got it, shutup already</string>
+    <string name="money_symbol">$</string>
+    <string name="ten_dollars">$10</string>
+    <string name="five_dollars">$5</string>
+    <string name="twenty_dollars">$20</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="set_string">Set</string>
+    <string name="will_cost_string">Will Cost $</string>
+    <string name="be_done_by_string">"Be Done by "</string>
+    <string name="washer_string">Washers</string>
+    <string name="dryer_string">Dryers</string>
+    <string name="loads_string">Loads</string>
+    <string name="card_balance_string">Card Balance</string>
+    <string name="loads_left_string">" loads left, "</string>
+    <string name="done_by_string">"done by "</string>
+
+</resources>

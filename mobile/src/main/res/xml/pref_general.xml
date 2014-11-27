@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <EditTextPreference
+        android:defaultValue="35"
+        android:inputType="number"
+        android:key="washer_time"
+        android:title="Washer time(Minutes)" />
+    <EditTextPreference
+        android:defaultValue="45"
+        android:inputType="number"
+        android:key="dryer_time"
+        android:title="Dryer Time (Minutes)" />
+
+    <ListPreference
+        android:defaultValue="0.00"
+        android:entries="@array/pref_washer_cost"
+        android:entryValues="@array/pref_washer_cost_values"
+        android:key="washer_cost"
+        android:title="Washer Cost" />
+    <ListPreference
+        android:defaultValue="0.00"
+        android:entries="@array/pref_dryer_cost"
+        android:entryValues="@array/pref_dryer_cost_values"
+        android:key="dryer_cost"
+        android:title="Dryer Cost" />
+
+
+
+</PreferenceScreen>
